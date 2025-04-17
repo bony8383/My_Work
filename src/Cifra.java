@@ -8,8 +8,8 @@ public class Cifra {
         int a = sc.nextInt();
         System.out.println("Insert second  number:");
         int b = sc.nextInt();
-        int c = 0;
-         c = a;
+
+         int c = a;
          a = b;
          b = c;
         System.out.println("After swapping:");
