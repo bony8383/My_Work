@@ -7,14 +7,19 @@ import java.util.Scanner;
 public class TriUgolnik {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Биринчи тарабынын узундугун жазыңыз:");
-        int a = sc.nextInt();
-        System.out.println("Экинчи тарабынын узундугун жазыңыз:");
-        int b = sc.nextInt();
-        System.out.println("Үчүнчү тарабынын узундугун жазыңыз:");
-        int c = sc.nextInt();
-        int result = a + b + c;
-        System.out.println("Үч бурчтуктун аянты: " + result);
+
+        // Негизги табан жана бийиктик жөнүндө маалымат алуу
+        System.out.println("Негизги табандын узундугун жазыңыз:");
+        double base = sc.nextDouble();
+
+        System.out.println("Бийиктикти жазыңыз:");
+        double height = sc.nextDouble();
+
+        // Аянтты эсептөө
+        double area = 0.5 * base * height;
+
+        // Натыйжаны чыгаруу
+        System.out.println("Үч бурчтуктун аянты: " + area);
 
     }
 
